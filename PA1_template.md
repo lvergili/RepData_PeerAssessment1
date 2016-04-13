@@ -68,7 +68,7 @@ hist(x=steps_by_day,
 abline(v=mean(steps_by_day, na.rm=TRUE), col="yellow", lwd=6)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](unnamed-chunk-3-1.png)<!-- -->
 
 Histogram shows that average daily steps is above 10K steps. Let's compute the exact value. To do this, we have to calculate mean of the daily steps. 
 
@@ -116,7 +116,7 @@ with(activity_ia,
 abline(h=mean(activity_ia$avg, na.rm=TRUE), col="red", lwd=2)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](unnamed-chunk-6-1.png)<!-- -->
 
 Plot shows that there is a peak between interval id 800 and 900. Let's find out exact value.
 
@@ -183,7 +183,7 @@ hist(x=new_steps_by_day,
 abline(v=mean(new_steps_by_day, na.rm=TRUE), col="yellow", lwd=6)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](unnamed-chunk-11-1.png)<!-- -->
 
 As it can be seen, average daily step after missing data removed is above 10K. It is similar the previous result which missing data was not removed. If we look at mean and median value, we can compare the results.
 
@@ -246,6 +246,6 @@ xyplot(steps ~ interval | factor(wk),
        data=wk_activity)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](unnamed-chunk-15-1.png)<!-- -->
 
 Plot shows us, there is more activity in early weekdays which interval is between 800 and 900. But, more overall activity accurs during to weekend.
